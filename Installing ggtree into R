@@ -1,0 +1,28 @@
+# How to upload the program 'ggtree', an extension of 'ggplot2' for the creation of phylogenetic trees in R. Run the following code:  
+
+install.packages(ggtree)
+source("http://bioconductor.org/biocLite.R")
+biocLite()
+biocLite("DESeq2")
+biocLite("ggtree")
+
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install(version = "3.18")
+
+library(BiocManager)
+
+install.packages("tidyverse")
+library(tidyverse)
+
+library(ggtree)
+
+browseVignettes("ggtree")
+
+install.packages("rlang")
+
+library(BiocManager)
+BiocManager::install("ggtree")
+BiocManager::install("treeio")
+
+library(treeio)
